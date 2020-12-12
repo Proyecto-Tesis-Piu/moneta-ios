@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,9 @@
 		9D7B7E92257311D300E23368 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D7B7E90257311D300E23368 /* LaunchScreen.storyboard */; };
 		9D7B7E9D257311D300E23368 /* Moneta_StudioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7B7E9C257311D300E23368 /* Moneta_StudioTests.swift */; };
 		9D7B7EA8257311D400E23368 /* Moneta_StudioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7B7EA7257311D400E23368 /* Moneta_StudioUITests.swift */; };
+		9D7B7EBA25731A7100E23368 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7B7EB925731A7100E23368 /* NetworkManager.swift */; };
+		9D7B7EC025731C7900E23368 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9D7B7EBF25731C7900E23368 /* Alamofire */; };
+		9D7B7EC8257442A700E23368 /* responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7B7EC7257442A700E23368 /* responses.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,8 @@
 		9D7B7EA3257311D300E23368 /* Moneta StudioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Moneta StudioUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D7B7EA7257311D400E23368 /* Moneta_StudioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moneta_StudioUITests.swift; sourceTree = "<group>"; };
 		9D7B7EA9257311D400E23368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D7B7EB925731A7100E23368 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		9D7B7EC7257442A700E23368 /* responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = responses.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D7B7EC025731C7900E23368 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +105,7 @@
 		9D7B7E84257311D000E23368 /* Moneta Studio */ = {
 			isa = PBXGroup;
 			children = (
+				9D7B7EB825731A0300E23368 /* Classes */,
 				9D7B7E85257311D000E23368 /* AppDelegate.swift */,
 				9D7B7E87257311D000E23368 /* SceneDelegate.swift */,
 				9D7B7E89257311D000E23368 /* ViewController.swift */,
@@ -128,6 +135,15 @@
 			path = "Moneta StudioUITests";
 			sourceTree = "<group>";
 		};
+		9D7B7EB825731A0300E23368 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9D7B7EB925731A7100E23368 /* NetworkManager.swift */,
+				9D7B7EC7257442A700E23368 /* responses.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +160,9 @@
 			dependencies = (
 			);
 			name = "Moneta Studio";
+			packageProductDependencies = (
+				9D7B7EBF25731C7900E23368 /* Alamofire */,
+			);
 			productName = "Moneta Studio";
 			productReference = 9D7B7E82257311D000E23368 /* Moneta Studio.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +234,9 @@
 				Base,
 			);
 			mainGroup = 9D7B7E79257311D000E23368;
+			packageReferences = (
+				9D7B7EBE25731C7900E23368 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 9D7B7E83257311D000E23368 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,9 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D7B7EBA25731A7100E23368 /* NetworkManager.swift in Sources */,
 				9D7B7E8A257311D000E23368 /* ViewController.swift in Sources */,
 				9D7B7E86257311D000E23368 /* AppDelegate.swift in Sources */,
 				9D7B7E88257311D000E23368 /* SceneDelegate.swift in Sources */,
+				9D7B7EC8257442A700E23368 /* responses.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +397,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -427,6 +452,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -593,6 +619,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9D7B7EBE25731C7900E23368 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9D7B7EBF25731C7900E23368 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D7B7EBE25731C7900E23368 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9D7B7E7A257311D000E23368 /* Project object */;
 }
