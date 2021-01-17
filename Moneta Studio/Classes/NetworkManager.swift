@@ -46,7 +46,7 @@ class NetworkManager {
         sessionManager.request(url!, method: .post, parameters: parameters, encoder: JSONParameterEncoder.default, headers: headers).validate(statusCode: 200..<300).responseJSON { response in
             switch response.result {
             case .success(let value):
-                guard let data = value as? [String: String] else {
+                guard let data = value as? [String: Any] else {
                     completitionHandler(false, value)
                     return
                 }

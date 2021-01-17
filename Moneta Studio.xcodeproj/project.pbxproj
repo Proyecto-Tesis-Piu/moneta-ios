@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D40A5FB2585A0DC00A0AE43 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D40A5FA2585A0DC00A0AE43 /* SignInViewController.swift */; };
 		9D7B7E86257311D000E23368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7B7E85257311D000E23368 /* AppDelegate.swift */; };
 		9D7B7E88257311D000E23368 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7B7E87257311D000E23368 /* SceneDelegate.swift */; };
-		9D7B7E8A257311D000E23368 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7B7E89257311D000E23368 /* ViewController.swift */; };
+		9D7B7E8A257311D000E23368 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7B7E89257311D000E23368 /* LoginViewController.swift */; };
 		9D7B7E8D257311D000E23368 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D7B7E8B257311D000E23368 /* Main.storyboard */; };
 		9D7B7E8F257311D300E23368 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D7B7E8E257311D300E23368 /* Assets.xcassets */; };
 		9D7B7E92257311D300E23368 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D7B7E90257311D300E23368 /* LaunchScreen.storyboard */; };
@@ -38,10 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D40A5FA2585A0DC00A0AE43 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		9D7B7E82257311D000E23368 /* Moneta Studio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Moneta Studio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D7B7E85257311D000E23368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D7B7E87257311D000E23368 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9D7B7E89257311D000E23368 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9D7B7E89257311D000E23368 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9D7B7E8C257311D000E23368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D7B7E8E257311D300E23368 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D7B7E91257311D300E23368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -82,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D40A5EE25859E3900A0AE43 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9D7B7E89257311D000E23368 /* LoginViewController.swift */,
+				9D40A5FA2585A0DC00A0AE43 /* SignInViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		9D7B7E79257311D000E23368 = {
 			isa = PBXGroup;
 			children = (
@@ -105,10 +116,10 @@
 		9D7B7E84257311D000E23368 /* Moneta Studio */ = {
 			isa = PBXGroup;
 			children = (
+				9D40A5EE25859E3900A0AE43 /* View Controllers */,
 				9D7B7EB825731A0300E23368 /* Classes */,
 				9D7B7E85257311D000E23368 /* AppDelegate.swift */,
 				9D7B7E87257311D000E23368 /* SceneDelegate.swift */,
-				9D7B7E89257311D000E23368 /* ViewController.swift */,
 				9D7B7E8B257311D000E23368 /* Main.storyboard */,
 				9D7B7E8E257311D300E23368 /* Assets.xcassets */,
 				9D7B7E90257311D300E23368 /* LaunchScreen.storyboard */,
@@ -281,7 +292,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D7B7EBA25731A7100E23368 /* NetworkManager.swift in Sources */,
-				9D7B7E8A257311D000E23368 /* ViewController.swift in Sources */,
+				9D40A5FB2585A0DC00A0AE43 /* SignInViewController.swift in Sources */,
+				9D7B7E8A257311D000E23368 /* LoginViewController.swift in Sources */,
 				9D7B7E86257311D000E23368 /* AppDelegate.swift in Sources */,
 				9D7B7E88257311D000E23368 /* SceneDelegate.swift in Sources */,
 				9D7B7EC8257442A700E23368 /* responses.swift in Sources */,

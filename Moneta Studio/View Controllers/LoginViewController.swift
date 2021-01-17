@@ -7,11 +7,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var goToRegister: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,6 +21,8 @@ class ViewController: UIViewController {
     
     func setupStyles() {
         loginButton.layer.cornerRadius = 5
+        loginButton.setTitle("Iniciar Sesión", for: .normal)
+        goToRegister.setTitle("Olvidaste la contraseña", for: .normal)
     }
     
 
@@ -28,11 +31,24 @@ class ViewController: UIViewController {
         guard let password = passwordTextField.text else {return}
         NetworkManager.sharedInstance.postLogin(email, password) { (result, message) in
             if result  {
-                print("logged in", message as! LoginForm)
+                if let login = message as? LoginForm {
+                    print("logged in", login.token)
+                    if login.emailConfirmed {
+                        print("email confirmed")
+                    } else {
+                        print("confirma tu email pls ")
+                    }
+                }
             } else {
                 print("login in failed", message as! String)
             }
         }
+    }
+    
+    @IBAction func goToSignIn(_ sender: Any) {
+//        let vc = storyboard?.instantiateViewController(withIdentifier: "SignInViewController")
+//        vc!.modalPresentationStyle = .fullScreen
+//        present(vc!, animated: true)
     }
     
 }

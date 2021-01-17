@@ -10,8 +10,10 @@ import Foundation
 
 struct LoginForm {
     var token: String
+    var emailConfirmed: Bool
     
     init(json: [String: Any]) {
         token = json["token"] as? String ?? ""
+        emailConfirmed = json["emailConfirmed"] as? Bool ?? false
     }
 }
