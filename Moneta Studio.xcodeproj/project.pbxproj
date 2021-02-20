@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		9D40A5FB2585A0DC00A0AE43 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D40A5FA2585A0DC00A0AE43 /* SignInViewController.swift */; };
+		9D754A3D25D906B200FEDCB7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D754A3C25D906B200FEDCB7 /* HomeViewController.swift */; };
+		9D754A4325D9072600FEDCB7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D754A4225D9072600FEDCB7 /* SettingsViewController.swift */; };
+		9D754A4B25D90A7B00FEDCB7 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D754A4A25D90A7B00FEDCB7 /* AuthenticationManager.swift */; };
+		9D754A5925DAF63800FEDCB7 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D754A5825DAF63800FEDCB7 /* Auth.storyboard */; };
+		9D754A6425DAF8A300FEDCB7 /* CalendarPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D754A6325DAF8A300FEDCB7 /* CalendarPickerViewController.swift */; };
+		9D754A9725DB553E00FEDCB7 /* MonthMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D754A9625DB553E00FEDCB7 /* MonthMetadata.swift */; };
+		9D754A9F25DB569700FEDCB7 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D754A9E25DB569700FEDCB7 /* Day.swift */; };
+		9D754AA425DB5A7C00FEDCB7 /* CalendarDateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D754AA325DB5A7C00FEDCB7 /* CalendarDateCollectionViewCell.swift */; };
+		9D754AAC25DB60A000FEDCB7 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D754AAB25DB60A000FEDCB7 /* CalendarViewController.swift */; };
+		9D754AB125DC5DBC00FEDCB7 /* CalendarPickerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D754AB025DC5DBC00FEDCB7 /* CalendarPickerHeaderView.swift */; };
+		9D754AB625DC5DCC00FEDCB7 /* CalendarPickerFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D754AB525DC5DCC00FEDCB7 /* CalendarPickerFooterView.swift */; };
 		9D7B7E86257311D000E23368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7B7E85257311D000E23368 /* AppDelegate.swift */; };
 		9D7B7E88257311D000E23368 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7B7E87257311D000E23368 /* SceneDelegate.swift */; };
 		9D7B7E8A257311D000E23368 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7B7E89257311D000E23368 /* LoginViewController.swift */; };
@@ -40,6 +51,17 @@
 
 /* Begin PBXFileReference section */
 		9D40A5FA2585A0DC00A0AE43 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		9D754A3C25D906B200FEDCB7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9D754A4225D9072600FEDCB7 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		9D754A4A25D90A7B00FEDCB7 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		9D754A5825DAF63800FEDCB7 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		9D754A6325DAF8A300FEDCB7 /* CalendarPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPickerViewController.swift; sourceTree = "<group>"; };
+		9D754A9625DB553E00FEDCB7 /* MonthMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthMetadata.swift; sourceTree = "<group>"; };
+		9D754A9E25DB569700FEDCB7 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		9D754AA325DB5A7C00FEDCB7 /* CalendarDateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDateCollectionViewCell.swift; sourceTree = "<group>"; };
+		9D754AAB25DB60A000FEDCB7 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		9D754AB025DC5DBC00FEDCB7 /* CalendarPickerHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarPickerHeaderView.swift; sourceTree = "<group>"; };
+		9D754AB525DC5DCC00FEDCB7 /* CalendarPickerFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarPickerFooterView.swift; sourceTree = "<group>"; };
 		9D7B7E82257311D000E23368 /* Moneta Studio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Moneta Studio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D7B7E85257311D000E23368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D7B7E87257311D000E23368 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,10 +109,58 @@
 		9D40A5EE25859E3900A0AE43 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9D7B7E89257311D000E23368 /* LoginViewController.swift */,
-				9D40A5FA2585A0DC00A0AE43 /* SignInViewController.swift */,
+				9D754A6225DAF89100FEDCB7 /* CalendarView */,
+				9D754A4125D9070F00FEDCB7 /* Settings */,
+				9D754A3B25D9068100FEDCB7 /* Home */,
+				9D754A3A25D9067200FEDCB7 /* Auth */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		9D754A3A25D9067200FEDCB7 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				9D40A5FA2585A0DC00A0AE43 /* SignInViewController.swift */,
+				9D7B7E89257311D000E23368 /* LoginViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		9D754A3B25D9068100FEDCB7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9D754A3C25D906B200FEDCB7 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9D754A4125D9070F00FEDCB7 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				9D754A4225D9072600FEDCB7 /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		9D754A6225DAF89100FEDCB7 /* CalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				9D754A6325DAF8A300FEDCB7 /* CalendarPickerViewController.swift */,
+				9D754AA325DB5A7C00FEDCB7 /* CalendarDateCollectionViewCell.swift */,
+				9D754AB525DC5DCC00FEDCB7 /* CalendarPickerFooterView.swift */,
+				9D754AB025DC5DBC00FEDCB7 /* CalendarPickerHeaderView.swift */,
+				9D754AAB25DB60A000FEDCB7 /* CalendarViewController.swift */,
+			);
+			path = CalendarView;
+			sourceTree = "<group>";
+		};
+		9D754A9525DB552700FEDCB7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9D754A9625DB553E00FEDCB7 /* MonthMetadata.swift */,
+				9D754A9E25DB569700FEDCB7 /* Day.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		9D7B7E79257311D000E23368 = {
@@ -116,11 +186,13 @@
 		9D7B7E84257311D000E23368 /* Moneta Studio */ = {
 			isa = PBXGroup;
 			children = (
+				9D754A9525DB552700FEDCB7 /* Models */,
 				9D40A5EE25859E3900A0AE43 /* View Controllers */,
 				9D7B7EB825731A0300E23368 /* Classes */,
 				9D7B7E85257311D000E23368 /* AppDelegate.swift */,
 				9D7B7E87257311D000E23368 /* SceneDelegate.swift */,
 				9D7B7E8B257311D000E23368 /* Main.storyboard */,
+				9D754A5825DAF63800FEDCB7 /* Auth.storyboard */,
 				9D7B7E8E257311D300E23368 /* Assets.xcassets */,
 				9D7B7E90257311D300E23368 /* LaunchScreen.storyboard */,
 				9D7B7E93257311D300E23368 /* Info.plist */,
@@ -151,6 +223,7 @@
 			children = (
 				9D7B7EB925731A7100E23368 /* NetworkManager.swift */,
 				9D7B7EC7257442A700E23368 /* responses.swift */,
+				9D754A4A25D90A7B00FEDCB7 /* AuthenticationManager.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -264,6 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D754A5925DAF63800FEDCB7 /* Auth.storyboard in Resources */,
 				9D7B7E92257311D300E23368 /* LaunchScreen.storyboard in Resources */,
 				9D7B7E8F257311D300E23368 /* Assets.xcassets in Resources */,
 				9D7B7E8D257311D000E23368 /* Main.storyboard in Resources */,
@@ -293,10 +367,20 @@
 			files = (
 				9D7B7EBA25731A7100E23368 /* NetworkManager.swift in Sources */,
 				9D40A5FB2585A0DC00A0AE43 /* SignInViewController.swift in Sources */,
+				9D754AA425DB5A7C00FEDCB7 /* CalendarDateCollectionViewCell.swift in Sources */,
+				9D754A9F25DB569700FEDCB7 /* Day.swift in Sources */,
+				9D754A6425DAF8A300FEDCB7 /* CalendarPickerViewController.swift in Sources */,
 				9D7B7E8A257311D000E23368 /* LoginViewController.swift in Sources */,
+				9D754A4B25D90A7B00FEDCB7 /* AuthenticationManager.swift in Sources */,
 				9D7B7E86257311D000E23368 /* AppDelegate.swift in Sources */,
 				9D7B7E88257311D000E23368 /* SceneDelegate.swift in Sources */,
+				9D754A9725DB553E00FEDCB7 /* MonthMetadata.swift in Sources */,
+				9D754A3D25D906B200FEDCB7 /* HomeViewController.swift in Sources */,
+				9D754AB625DC5DCC00FEDCB7 /* CalendarPickerFooterView.swift in Sources */,
 				9D7B7EC8257442A700E23368 /* responses.swift in Sources */,
+				9D754AAC25DB60A000FEDCB7 /* CalendarViewController.swift in Sources */,
+				9D754AB125DC5DBC00FEDCB7 /* CalendarPickerHeaderView.swift in Sources */,
+				9D754A4325D9072600FEDCB7 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
