@@ -19,7 +19,7 @@ class AuthenticationManager {
     
     var isLoggedIn = false
     
-    static private var _currentSession = true
+    static private var _currentSession = false
     static var isCurrentSessionAuthenticated: Bool {
         get {
             return _currentSession

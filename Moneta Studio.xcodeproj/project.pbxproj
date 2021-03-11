@@ -30,6 +30,8 @@
 		9D7B7EBA25731A7100E23368 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7B7EB925731A7100E23368 /* NetworkManager.swift */; };
 		9D7B7EC025731C7900E23368 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9D7B7EBF25731C7900E23368 /* Alamofire */; };
 		9D7B7EC8257442A700E23368 /* responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7B7EC7257442A700E23368 /* responses.swift */; };
+		9D953BEE25E1E028004135C9 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D953BED25E1E028004135C9 /* Auth0.plist */; };
+		9D953BF725E1E277004135C9 /* Auth0 in Frameworks */ = {isa = PBXBuildFile; productRef = 9D953BF625E1E277004135C9 /* Auth0 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,7 @@
 		9D7B7EA9257311D400E23368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D7B7EB925731A7100E23368 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		9D7B7EC7257442A700E23368 /* responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = responses.swift; sourceTree = "<group>"; };
+		9D953BED25E1E028004135C9 /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D7B7EC025731C7900E23368 /* Alamofire in Frameworks */,
+				9D953BF725E1E277004135C9 /* Auth0 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +200,7 @@
 				9D7B7E8E257311D300E23368 /* Assets.xcassets */,
 				9D7B7E90257311D300E23368 /* LaunchScreen.storyboard */,
 				9D7B7E93257311D300E23368 /* Info.plist */,
+				9D953BED25E1E028004135C9 /* Auth0.plist */,
 			);
 			path = "Moneta Studio";
 			sourceTree = "<group>";
@@ -246,6 +251,7 @@
 			name = "Moneta Studio";
 			packageProductDependencies = (
 				9D7B7EBF25731C7900E23368 /* Alamofire */,
+				9D953BF625E1E277004135C9 /* Auth0 */,
 			);
 			productName = "Moneta Studio";
 			productReference = 9D7B7E82257311D000E23368 /* Moneta Studio.app */;
@@ -320,6 +326,7 @@
 			mainGroup = 9D7B7E79257311D000E23368;
 			packageReferences = (
 				9D7B7EBE25731C7900E23368 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				9D953BF525E1E277004135C9 /* XCRemoteSwiftPackageReference "Auth0.swift" */,
 			);
 			productRefGroup = 9D7B7E83257311D000E23368 /* Products */;
 			projectDirPath = "";
@@ -337,6 +344,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D953BEE25E1E028004135C9 /* Auth0.plist in Resources */,
 				9D754A5925DAF63800FEDCB7 /* Auth.storyboard in Resources */,
 				9D7B7E92257311D300E23368 /* LaunchScreen.storyboard in Resources */,
 				9D7B7E8F257311D300E23368 /* Assets.xcassets in Resources */,
@@ -565,7 +573,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Fhx.Moneta-Studio";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Moneta-Studio";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -584,7 +592,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Fhx.Moneta-Studio";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Moneta-Studio";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -725,6 +733,14 @@
 				minimumVersion = 5.4.0;
 			};
 		};
+		9D953BF525E1E277004135C9 /* XCRemoteSwiftPackageReference "Auth0.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/auth0/Auth0.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.31.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -732,6 +748,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9D7B7EBE25731C7900E23368 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		9D953BF625E1E277004135C9 /* Auth0 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D953BF525E1E277004135C9 /* XCRemoteSwiftPackageReference "Auth0.swift" */;
+			productName = Auth0;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

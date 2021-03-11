@@ -46,6 +46,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         vc.modalPresentationStyle = .fullScreen
         return vc
     }
+    
+    func showHome() {
+        let vc = homeViewController()
+        window?.rootViewController = vc
+        window?.makeKeyAndVisible()
+    }
+    
+    func showAuth() {
+        let vc = authViewController()
+        window?.rootViewController = vc
+        window?.makeKeyAndVisible()
+    }
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.

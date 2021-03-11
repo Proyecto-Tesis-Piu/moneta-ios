@@ -38,10 +38,10 @@ class NetworkManager {
     
     func postLogin(_ email: String, _ password: String, completitionHandler: @escaping (Bool, Any?) -> Void) {
         let url = URL(string: baseURL + "/User/Login")
-//        let parameters: [String: String] = ["email": email,
-//                          "password": password]
-        let parameters: [String: String] = ["email": "raul@outlook.com",
-                          "password": "12345678"]
+        let parameters: [String: String] = ["email": email,
+                          "password": password]
+//        let parameters: [String: String] = ["email": "raul@outlook.com",
+//                          "password": "12345678"]
         
         sessionManager.request(url!, method: .post, parameters: parameters, encoder: JSONParameterEncoder.default, headers: headers).validate(statusCode: 200..<300).responseJSON { response in
             switch response.result {

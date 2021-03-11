@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Auth0
 
 class LoginViewController: UIViewController {
 
@@ -27,21 +28,26 @@ class LoginViewController: UIViewController {
     
 
     @IBAction func login(_ sender: Any) {
-        guard let email = emailTextField.text else {return}
-        guard let password = passwordTextField.text else {return}
-        NetworkManager.sharedInstance.postLogin(email, password) { (result, message) in
-            if result  {
-                if let login = message as? LoginForm {
-                    print("logged in", login.token)
-                    if login.emailConfirmed {
-                        print("email confirmed")
-                    } else {
-                        print("confirma tu email pls ")
-                    }
+        Auth0
+            .webAuth()
+            .scope("openid profile")
+            .audience("https://monetastudio.us.auth0.com/userinfo")
+            .start { result in
+                switch result {
+                case .failure(let error):
+                    // Handle the error
+                    print("Error: \(error)")
+                case .success(let credentials):
+                    // Do something with credentials e.g.: save them.
+                    // Auth0 will automatically dismiss the login page
+//                    print("Credentials: \(credentials)", credentials.accessToken)
+                    guard let token = credentials.accessToken else { return } //TODO: handle Error
+                    NetworkManager.sharedInstance.setAuthToken(token)
+                    AuthenticationManager.currentToken = token
+                    guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                          let delegate = windowScene.delegate as? SceneDelegate else { return }
+                    delegate.showHome()
                 }
-            } else {
-                print("login in failed", message as! String)
-            }
         }
     }
     
